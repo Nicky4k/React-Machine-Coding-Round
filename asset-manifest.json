@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React-Machine-Coding-Round/static/css/main.7613d7d7.css",
-    "main.js": "/React-Machine-Coding-Round/static/js/main.aec50625.js",
+    "main.css": "/React-Machine-Coding-Round/static/css/main.edd551b3.css",
+    "main.js": "/React-Machine-Coding-Round/static/js/main.807e7148.js",
     "index.html": "/React-Machine-Coding-Round/index.html",
-    "main.7613d7d7.css.map": "/React-Machine-Coding-Round/static/css/main.7613d7d7.css.map",
-    "main.aec50625.js.map": "/React-Machine-Coding-Round/static/js/main.aec50625.js.map"
+    "main.edd551b3.css.map": "/React-Machine-Coding-Round/static/css/main.edd551b3.css.map",
+    "main.807e7148.js.map": "/React-Machine-Coding-Round/static/js/main.807e7148.js.map"
   },
   "entrypoints": [
-    "static/css/main.7613d7d7.css",
-    "static/js/main.aec50625.js"
+    "static/css/main.edd551b3.css",
+    "static/js/main.807e7148.js"
   ]
 }
