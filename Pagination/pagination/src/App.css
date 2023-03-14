@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  position: fixed;
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding-top: 0.5rem;
+  font-family: "Inter";
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  color: rgb(162, 162, 162);
+  overflow-y: scroll;
+  transition: all 250ms;
+}
+
+.App > h3 {
+  margin: 1.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: silver;
+}
+a:visited {
+  color: darkgray;
+}
+
+.App {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.App::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.App > section {
+  margin: 0.25rem 5rem 0rem 5rem;
+  height: 70vh;
+  overflow: scroll;
+}
+
+.CountriesTabView__figure {
+  display: flex;
+  width: calc(100vw - 10.5rem);
+  align-items: center;
+  margin: 0.5rem 0.25rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+  background-color: rgb(24, 24, 24);
+  transition: all 0.25s linear 0.5s;
+}
+.CountriesTabView__figure > figure {
+  display: flex;
+  align-items: center;
+  width: 7rem;
+}
+
+.not__selectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.CountriesTabView__imageFlag {
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.CountriesTabView__body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+}
+
+.CountriesTabView__body > article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 0.5rem;
+}
+.CountriesTabView__body > article {
+  color: slategray;
+}
+
+.CountriesTabView__body > div > h4 {
+  color: rgb(122, 122, 122);
+}
+
+.superscript__text {
+  font-size: 0.5rem;
+}
+
+nav {
+  display: flex;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: calc(100vw - 10.5rem);
+  background-color: rgba(59, 59, 61, 0.757);
+  border-radius: 0.25rem;
+}
+
+nav > p {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(0, 0, 0);
+  margin: 0.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  color: rgb(229, 229, 229);
+}
+
+nav > p:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: all 0.15s;
+  background-color: rgb(17, 17, 17);
+}
+
+.padding__block {
+  width: 1rem;
+}
+
+nav > span {
+  position: relative;
+  top: 0.8rem;
+}
+
+.pageResults__selector {
+  display: flex;
+  width: calc(100vw - 10.5rem);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0.5rem 1.25rem;
+  border: 1px solid rgb(46, 46, 46);
+  border-radius: 0.25rem;
+}
+
+.btn__container {
+  display: flex;
+  align-items: center;
+}
+
+.btn__container > h4 {
+  margin-right: 0.5rem;
+}
+
+.pageSizeSelect__btn {
+  border: none;
+  margin: 0.25rem;
+  height: 1.75rem;
+  width: 2rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  background-color: rgb(53, 61, 69);
+  color: rgb(157, 157, 157);
+}
+
+.pageSizeSelect__btn:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: all 0.25s;
+  background-color: rgb(82, 90, 98);
+}
+
+.selected__btn {
+  background-color: rgb(149, 119, 196);
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .App {
+    justify-content: space-evenly;
+    padding-bottom: 1.5rem;
+  }
+
+  .App > h3 {
+    width: calc(100vw - 2.5rem);
+    padding: 0.25rem 0;
+    margin: 0.25rem 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: rgba(12, 0, 62, 0.819);
+    border-radius: 0.25rem;
+  }
+
+  .App > section {
+    margin: 0.25rem 0.5rem 0rem 0.5rem;
+  }
+
+  .CountriesTabView__figure {
+    width: calc(100vw - 2.5rem);
+    padding: 0.5rem;
+  }
+
+  .CountriesTabView__imageFlag {
+    height: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+  }
+  h4 {
+    font-size: 0.85rem;
+  }
+  h5,
+  h6 {
+    font-size: 0.75rem;
+  }
+
+  nav {
+    margin-top: 0.5rem;
+    padding: 0.25rem;
+    width: calc(100vw - 2.5rem);
+  }
+
+  nav > p {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 0.18rem;
+  }
+
+  .padding__block {
+    width: 0.025rem;
+  }
+
+  .pageResults__selector {
+    width: calc(100vw - 2.5rem);
+    padding: 0.5rem;
+  }
+  nav > span {
+    top: 0.4rem;
+    transform: scale(0.75);
+  }
+
+  .pageSizeSelect__btn {
+    margin: 0.25rem;
+    height: 1.5rem;
+    width: 1.75rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .App > h3 {
+    width: calc(100vw - 2rem);
+  }
+
+  .CountriesTabView__figure {
+    width: calc(100vw - 2rem);
+  }
+
+  .CountriesTabView__imageFlag {
+    height: 2rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+  h4 {
+    font-size: 0.7rem;
+  }
+  h5,
+  h6 {
+    font-size: 0.6rem;
+  }
+
+  nav {
+    padding: 0.25rem 0.05rem;
+    width: calc(100vw - 2rem);
+  }
+
+  nav > p {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.07rem;
+  }
+
+  nav > span {
+    top: 0.25rem;
+    transform: scale(0.5);
+  }
+
+  .padding__block {
+    width: 0;
+  }
+
+  .pageResults__selector {
+    width: calc(100vw - 2rem);
+    padding: 0.25rem;
+  }
+
+  .pageSizeSelect__btn {
+    margin: 0.15rem;
+    height: 1.25rem;
+    width: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .btn__container > h4 {
+    margin-right: 0.25rem;
+  }
+}

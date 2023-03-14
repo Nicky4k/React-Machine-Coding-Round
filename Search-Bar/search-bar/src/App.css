@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: black;
+  color: floralwhite;
+}
+
+.App__inputBox {
+  margin: 0.5rem 0;
+  padding: 0.25rem 1rem;
+  border-radius: 0.75rem;
+  border: 0 55rem solid gray;
+  background-color: rgba(38, 0, 255, 0.099);
+  color: bisque;
+}
